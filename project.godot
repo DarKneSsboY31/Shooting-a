@@ -19,6 +19,10 @@ config/name="「あ」を淘汰するゲーム"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/height=946
+
 [input]
 
 left={

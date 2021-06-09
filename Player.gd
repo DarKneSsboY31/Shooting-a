@@ -34,9 +34,22 @@ func _process(delta):
 			
 			#弾生成
 			var shot = Shot.instance()
+			var shot2 = Shot.instance()
+			var shot3 = Shot.instance()
+			var shot4 = Shot.instance()
+			
+			#弾用の位置
+			var shotPosition = position
 			
 			#弾の移動量の測定
-			shot.start(0, 0, 90, 1000)
+			shot.start(shotPosition.x + 50, shotPosition.y, 90, 1000)
+			shot2.start(shotPosition.x - 50, shotPosition.y, 90, 1000)
+			shot3.start(shotPosition.x + 100, shotPosition.y + 50, 90, 1000)
+			shot4.start(shotPosition.x - 100, shotPosition.y + 50, 90, 1000)
 			
-			#ルートノードの取得
-			add_child(shot)
+			#ルートノードの取得、ルートノードへ設定
+			var node = get_owner()
+			node.add_child(shot)
+			node.add_child(shot2)
+			node.add_child(shot3)
+			node.add_child(shot4)
