@@ -17,3 +17,9 @@ func _physics_process(delta):
 		
 	#弾の移動
 	position += velocity * delta
+
+
+func _on_Shot_area_entered(area):
+	if "Enemy" in area.name: #敵キャラに弾が当たれば
+		area.destroy() #敵を爆殺
+		queue_free() #弾も消える
