@@ -60,8 +60,7 @@ func _process(delta):
 			shot2.start(shotPosition.x - 50, shotPosition.y, 90, 1000)
 			shot3.start(shotPosition.x + 100, shotPosition.y + 50, 90, 1000)
 			shot4.start(shotPosition.x - 100, shotPosition.y + 50, 90, 1000)
-			
-			
+
 func hit(damage):
 	#ダメージを受けたら消える処理
 	#HPの設定などは後回し

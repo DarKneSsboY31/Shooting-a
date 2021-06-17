@@ -4,6 +4,7 @@
 [ext_resource path="res://主人公あ.png" type="Texture" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
+radius = 41.5394
 
 [node name="Player" type="Area2D"]
 script = ExtResource( 1 )
@@ -12,4 +13,5 @@ script = ExtResource( 1 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.629959, 5.03968 )
 shape = SubResource( 1 )

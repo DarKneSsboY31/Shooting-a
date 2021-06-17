@@ -22,6 +22,7 @@ config/icon="res://icon.png"
 [display]
 
 window/size/height=946
+window/dpi/allow_hidpi=true
 
 [input]
 

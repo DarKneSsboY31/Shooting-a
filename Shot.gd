@@ -13,11 +13,9 @@ func start(x, y, deg, speed):
 func _ready():
 	pass # Replace with function body.
 
-func _physics_process(delta):
-		
+func _physics_process(delta):	
 	#弾の移動
 	position += velocity * delta
-
 
 func _on_Shot_area_entered(area):
 	if "Enemy" in area.name: #敵キャラに弾が当たれば
